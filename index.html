@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="add"><a href="#Add-Image">Add Image</a></div>
+        <div id="view"><a href="#View-Image">Image Gallery</a></div>
+    </div>
+
+    <div id="Add-Image">
+        <h1>Add Image</h1>
+        <input type="file" id="imageInput" accept="image/*" />
+        <button id="uploadBtn">Upload Image</button>
+    </div>
+
+    <div id="View-Image">
+        <h1>View Image</h1>
+        <div id="img-gallery" class="gallery"></div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
